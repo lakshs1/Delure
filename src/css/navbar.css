@@ -1,0 +1,120 @@
+.nav{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+  font-weight: 500;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+.list {
+    display: none;
+    gap: 1.25rem; /* 20px between flex items */
+    font-size: 0.875rem; /* 14px */
+    color: #374151; /* Tailwind's gray-700 */
+  }
+.hr{
+    width: 50%; 
+    border: none;
+    height: 2px;
+    background-color: #fc0000; /* Tailwind's gray-700 */
+    display: none;
+
+}
+.navl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+  }
+.rs{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.prof{
+    position: relative;
+}
+.rollover{
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-top: 1rem; /* 16px */
+  }
+  
+  /* When the parent with 'group' is hovered */
+.prof:hover .rollover{
+    display: block;
+  }
+  .r2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* 8px */
+    width: 9rem; /* 9 × 16px = 144px */
+    padding-top: 0.75rem;  /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+    padding-left: 1.25rem;  /* 20px */
+    padding-right: 1.25rem; /* 20px */
+    background-color: #f1f5f9; /* Tailwind's slate-100 */
+    color: #6b7280; /* Tailwind's gray-500 */
+    border-radius: 0.25rem; /* 4px */
+  }
+
+.rolling{
+    cursor: pointer;
+}
+.rolling:hover{
+    color: black;
+}
+.scon{
+    width: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.c{
+    position: relative;
+}
+.n{
+
+        position: absolute;
+        right: 8px;
+        bottom: -7px;
+        width: 1rem; /* 16px */
+        text-align: center;
+        line-height: 1rem; /* 16px */
+        background-color: #f90505;
+        color: #ffffff;
+        aspect-ratio: 1 / 1;
+        border-radius: 9999px; /* Full rounded */
+        font-size: 8px;
+
+}
+.menu{
+    width: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+  /* For screens >= 640px (small devices) */
+  @media (min-width: 640px) {
+    .list {
+      display: flex;
+      
+    }
+    
+  }
+  @media (max-width : 640px){
+    .menu{
+        display: block;
+    }
+  }
